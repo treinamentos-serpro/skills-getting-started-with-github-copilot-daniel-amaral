@@ -74,6 +74,79 @@ section h3 {
   margin-bottom: 8px;
 }
 
+.participants-section {
+  margin-top: 14px;
+  padding-top: 12px;
+  border-top: 1px solid #dce3ea;
+}
+
+.participants-section h5 {
+  margin-bottom: 8px;
+  color: #315b56;
+  font-size: 0.9rem;
+}
+
+.participants-list {
+  display: grid;
+  gap: 6px;
+  padding-left: 0;
+  list-style: none;
+  color: #4c5964;
+  font-size: 0.9rem;
+}
+
+.participant-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  min-width: 0;
+}
+
+.participant-email {
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+
+.participant-delete-button {
+  display: grid;
+  flex: 0 0 32px;
+  place-items: center;
+  width: 32px;
+  height: 32px;
+  padding: 6px;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  background: transparent;
+  color: #a43a3a;
+}
+
+.participant-delete-button:hover {
+  border-color: #f2caca;
+  background: #ffebee;
+  color: #b42318;
+}
+
+.participant-delete-button:focus-visible {
+  outline: 2px solid #16806b;
+  outline-offset: 2px;
+}
+
+.participant-delete-button:disabled {
+  cursor: wait;
+  opacity: 0.55;
+}
+
+.participant-delete-button svg {
+  width: 16px;
+  height: 16px;
+  fill: none;
+  stroke: currentColor;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 1.8;
+}
+
 .form-group {
   margin-bottom: 15px;
 }
